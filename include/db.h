@@ -53,7 +53,6 @@ public:
     // Updates the last_activity with current time
     void refreshConnection();
 
-private:
     // Private constructor to prevent direct instantiation.
     Database(const std::string& dbName,
         const std::string& username,
@@ -70,6 +69,9 @@ private:
     // Disallow move and move assignment
     Database(Database&&);
     Database& operator=(Database&&);
+
+private:
+
 
 private:
     // Member variables
