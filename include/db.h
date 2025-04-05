@@ -68,8 +68,8 @@ private:
     Database& operator=(const Database&);
 
     // Disallow move and move assignment
-    Database(Database&&) noexcept(false);
-    Database& operator=(Database&&) noexcept(false);
+    Database(Database&&);
+    Database& operator=(Database&&);
 
 private:
     // Member variables
